@@ -1,0 +1,18 @@
+ALGORITHM sentence
+ VAR 
+ str:STRING;
+ ch:CHAR:=" ";
+ nb-word:=INTEGER;
+ nb-CHAR:=INTEGER;
+ nb-vowel:= INTEGER;
+  BEGIN
+  WHILE (ch<> ".") DO
+    nb CHAR:= ch+1
+    END_WHILE
+    IF (ch==" ") THEN
+      nb-word:=nb-word+1
+    END_IF
+  IF (ch in [a,i,e,u,o,y,A,I,E,U,O,Y]) THEN
+    nb-vowel:=1
+  END_IF
+END
